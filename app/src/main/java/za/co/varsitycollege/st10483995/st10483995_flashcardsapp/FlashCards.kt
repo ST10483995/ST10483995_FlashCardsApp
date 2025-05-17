@@ -1,5 +1,6 @@
 package za.co.varsitycollege.st10483995.st10483995_flashcardsapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -18,6 +19,22 @@ class FlashCards : AppCompatActivity() {
         "India is a European country"
 
     )
+
+    val answers = arrayOf(
+        "True",
+        "False",
+        "False",
+        "True",
+        "False"
+    )
+
+    val useranswer = arrayOf(
+        "",
+        "",
+        "",
+        "",
+        ""
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,22 +44,32 @@ class FlashCards : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        // Declarations
         val questionView = findViewById<TextView>(R.id.questionView)
         val titleView = findViewById<TextView>(R.id.titleView)
         val trueButton = findViewById<Button>(R.id.trueButton)
         val falseButton = findViewById<Button>(R.id.falseButton)
         val nextButton = findViewById<Button>(R.id.nextButton)
-
+        var counter = 0
         questionView.text = questions[0]
 
-        nextButton.setOnClickListener {
-            var counter = 0
-            while (counter <= 4) {
-                if (counter == 4) {
-                    val intent
-                }
-            }
+
+        //Counter
+
+
+
+
+
+       nextButton.setOnClickListener{
+           counter ++
+           questionView.text = questions[counter]
+           trueButton.isEnabled = true
+           falseButton.isEnabled = true
+           if (counter == 4) {
+               val intent = Intent(this, Score::class.java)
+               startActivity(intent)
+           }
+       }
 
         }
     }
-}

@@ -52,14 +52,6 @@ class FlashCards : AppCompatActivity() {
         val nextButton = findViewById<Button>(R.id.nextButton)
         var counter = 0
         questionView.text = questions[0]
-
-
-        //Counter
-
-
-
-
-
        nextButton.setOnClickListener{
            counter ++
            questionView.text = questions[counter]
@@ -69,6 +61,8 @@ class FlashCards : AppCompatActivity() {
                val intent = Intent(this, Score::class.java)
                startActivity(intent)
            }
+
+
        }
 
         }

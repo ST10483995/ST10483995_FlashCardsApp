@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#88C58B"
+    android:background="#8DD5F6"
     tools:context=".FlashCards">
 
     <TextView

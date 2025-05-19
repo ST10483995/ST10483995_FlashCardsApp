@@ -13,11 +13,11 @@ import androidx.core.view.WindowInsetsCompat
 class FlashCards : AppCompatActivity() {
 
     val questions = arrayOf(
-        "The skin is the largest human organ",
-        "O negative is the rarest blood type",
-        "Water boils at 50 degrees Celsius",
-        "Portuguese is the official language of Mozambique",
-        "India is a European country"
+        "Queen Elizabeth owned 2000 pairs of gloves",
+        "Ancient Egyptians invented toothpaste 300 years ago",
+        "Ketchup was originally sold as detergent",
+        "Cleopatra married two of her brothers",
+        "Switzerland has the world's oldest parliament"
     )
 
     val answers = arrayOf(true, false, false, true, false)
@@ -86,7 +86,7 @@ class FlashCards : AppCompatActivity() {
 
 
         if (useranswer[counter] == answers[counter]) {
-            score++
+            scoreCounter++
             Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
@@ -99,7 +99,7 @@ class FlashCards : AppCompatActivity() {
                 putExtra("questions", questions)
                 putExtra("answers", answers)
                 putExtra("useranswer", useranswer)
-                putExtra("score", score)
+                putExtra("scoreCounter", scoreCounter)
 
             }
         }

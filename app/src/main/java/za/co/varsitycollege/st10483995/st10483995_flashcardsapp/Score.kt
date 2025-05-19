@@ -22,20 +22,27 @@ class Score : AppCompatActivity() {
         val reviewButton = findViewById<Button>(R.id.reviewButton)
         val reviewView = findViewById<TextView>(R.id.reviewView)
         val total = intent.getIntExtra("total", 5)
-        var reviewDisplay: String
-        val scoreCounter = intent.getIntExtra("scoreCounter", 0)
+        val score = intent.getIntExtra("score", 0)
+//        val bundle: Bundle? = intent.extras
+//        val score: Int? = bundle?.getInt("score")
+//        var reviewDisplay: String
+//        val scoreCounter = intent.getIntExtra("scoreCounter", 0)
 
 
 
-        scoreView.text = "You scored $scoreCounter/$total"
-                if (scoreCounter >= 3) {
-                    "Great Job!"
-                } else {
-                    if (scoreCounter < 3) {
-                        "Keep Practicing"
-                    }
-                }
-//
+
+
+
+
+        scoreView.text = "You scored $score/$total"
+//        if (score >= 3) {
+//            "Great Job!"
+//        } else {
+//            if (score < 3) {
+//                "Keep Practicing"
+            }
+        }
+////
 //        reviewButton.setOnClickListener{
 //            reviewDisplay = "Question 1 = True\n"
 //            "Question 2 = False\n"
@@ -44,5 +51,6 @@ class Score : AppCompatActivity() {
 //            "Question 5 = False"
 //        }
 //        reviewView.text = reviewDisplay
-    }
-}
+//   Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+//        } else {
+//            Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()

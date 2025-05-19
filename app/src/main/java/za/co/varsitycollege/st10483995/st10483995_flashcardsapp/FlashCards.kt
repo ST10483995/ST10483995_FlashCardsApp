@@ -27,7 +27,7 @@ class FlashCards : AppCompatActivity() {
     var counter = 0
     var trueFalse = false
     var falseTrue = false
-    var score = 0
+//    var score = 0
     var scoreCounter = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -81,16 +81,18 @@ class FlashCards : AppCompatActivity() {
             if (counter == 4) {
                 val intent = Intent(this, Score::class.java)
                 startActivity(intent)
+                Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
             }
         }
 
 
         if (useranswer[counter] == answers[counter]) {
             scoreCounter++
-            Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
-        } else {
-            Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
         }
+
+        val score = scoreCounter
 
 
         if (counter == questions.size - 1) {
@@ -99,13 +101,14 @@ class FlashCards : AppCompatActivity() {
                 putExtra("questions", questions)
                 putExtra("answers", answers)
                 putExtra("useranswer", useranswer)
-                putExtra("scoreCounter", scoreCounter)
+                putExtra("score", score)
 
             }
+            startActivity(intent)
         }
     }
 
-    private operator fun Boolean.get(counter: Int): Any {
-        TODO("Not yet implemented")
-    }
+//    private operator fun Boolean.get(counter: Int): Any {
+//        TODO("Not yet implemented")
+//    }
 }

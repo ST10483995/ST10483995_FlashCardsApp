@@ -30,20 +30,23 @@ To install the app open Android Studio: Select the file titled "ST10483995_Flash
 
 
 ### UI
+![FlashCards3](https://github.com/user-attachments/assets/4a0aa1a7-d141-4a7a-a1de-ccf31ad44de5)
 
 
 ### Question Page
+![FlashCards4](https://github.com/user-attachments/assets/b25cb068-d10b-478f-8d46-169433fee1a1)
 
 
 ### Flash Cards Code
+![FlashCards2](https://github.com/user-attachments/assets/9ab9afd4-e253-4a0d-93ba-63ef48677fe8)
 
 
 
 ## 🔗 Links
 
-- GitHub Profile: 
-- App Repository1: 
-- YouTube Video: 
+- [GitHub Profile: ](https://github.com/ST10483995)
+- [App Repository1:]() 
+- [YouTube Video:]() 
 
 ## Authors
 

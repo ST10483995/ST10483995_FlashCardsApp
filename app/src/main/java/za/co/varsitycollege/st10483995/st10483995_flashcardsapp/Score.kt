@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlin.system.exitProcess
 
 class Score : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,39 +19,35 @@ class Score : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val scoreView = findViewById<TextView>(R.id.scoreView)
+        //Declarations
         val reviewButton = findViewById<Button>(R.id.reviewButton)
         val reviewView = findViewById<TextView>(R.id.reviewView)
         val total = intent.getIntExtra("total", 5)
+
+
+//        val questions = intent.getSerializableExtra("questions") as ArrayList<String>
+//        val answers = intent.getSerializableExtra("answers") as ArrayList<String>
+//        val useranswer = intent.getSerializableExtra("useranswer") as ArrayList<String>
         val score = intent.getIntExtra("score", 0)
-//        val bundle: Bundle? = intent.extras
-//        val score: Int? = bundle?.getInt("score")
-//        var reviewDisplay: String
-//        val scoreCounter = intent.getIntExtra("scoreCounter", 0)
 
-
-
-
-
-
-
+        //Declaring an setting a text view
+        val scoreView = findViewById<TextView>(R.id.scoreView)
         scoreView.text = "You scored $score/$total"
-//        if (score >= 3) {
-//            "Great Job!"
-//        } else {
-//            if (score < 3) {
-//                "Keep Practicing"
-            }
-        }
-////
-//        reviewButton.setOnClickListener{
+//        val scoreBuilder = StringBuilder()
+//        scoreView.text = scoreBuilder.toString()
+
+        //Setting the button to terminate
+        reviewButton.setOnClickListener{
 //            reviewDisplay = "Question 1 = True\n"
 //            "Question 2 = False\n"
 //            "Question 3 = False\n"
 //            "Question 4 = True\n"
 //            "Question 5 = False"
-//        }
-//        reviewView.text = reviewDisplay
-//   Toast.makeText(this, "Correct!", Toast.LENGTH_SHORT).show()
-//        } else {
-//            Toast.makeText(this, "Incorrect!", Toast.LENGTH_SHORT).show()
+            finishAffinity()
+            exitProcess(0)
+        }
+    }
+}
+
+
+

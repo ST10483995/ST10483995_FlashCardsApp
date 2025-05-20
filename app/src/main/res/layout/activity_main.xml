@@ -36,11 +36,15 @@
          />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_marginTop="60dp"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:id="@+id/descriptionView"
+        android:layout_width="322dp"
+        android:layout_height="172dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="-470dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="-50dp"
+        android:text="Welcome to FlashLearn! This app is designed to help you brush up on different parts of history. The app will ask you a series of 5 true or false questions, then you will need to answer and move on to the next question. You will get your results at the very end. Good Luck!"
+        android:textAlignment="center"
+        android:textSize="18sp" />
 
 </LinearLayout>

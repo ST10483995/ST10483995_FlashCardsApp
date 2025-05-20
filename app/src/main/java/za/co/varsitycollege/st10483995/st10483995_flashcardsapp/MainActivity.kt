@@ -18,11 +18,13 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //Declaration for the button
         val startButton = findViewById<Button>(R.id.startButton)
 
+        //Setting the button up to work and move to the next page
         startButton.setOnClickListener {
             val intent = Intent(this, FlashCards::class.java)
             startActivity(intent)
         }
-        }
     }
+}

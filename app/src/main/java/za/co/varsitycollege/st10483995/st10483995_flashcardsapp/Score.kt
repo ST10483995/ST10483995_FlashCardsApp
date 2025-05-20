@@ -36,15 +36,13 @@ class Score : AppCompatActivity() {
 //        val scoreBuilder = StringBuilder()
 //        scoreView.text = scoreBuilder.toString()
 
-        //Setting the button to terminate
+        //Setting the button to show the question reviews
         reviewButton.setOnClickListener{
 //            reviewDisplay = "Question 1 = True\n"
 //            "Question 2 = False\n"
 //            "Question 3 = False\n"
 //            "Question 4 = True\n"
 //            "Question 5 = False"
-            finishAffinity()
-            exitProcess(0)
         }
     }
 }

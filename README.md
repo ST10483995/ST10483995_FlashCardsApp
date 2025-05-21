@@ -46,7 +46,7 @@ To install the app open Android Studio: Select the file titled "ST10483995_Flash
 
 - [GitHub Profile: ](https://github.com/ST10483995)
 - [App Repository1:]() 
-- [YouTube Video:]() 
+- [YouTube Video:](https://youtu.be/V6DEfTHHdbA) 
 
 ## Authors
 

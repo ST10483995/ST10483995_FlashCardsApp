@@ -13,12 +13,14 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+//Declarations for the parts of the arrays
 data class QuestionsLists(
     val question: String,
     var answer: Boolean,
     var useranswer: Boolean? = null
 )
 
+//Declarations for the counters
 var currentIndex = 0
 var scoreCounter = 0
 class FlashCards : AppCompatActivity() {

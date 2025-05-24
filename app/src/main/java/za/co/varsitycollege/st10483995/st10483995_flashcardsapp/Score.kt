@@ -35,24 +35,22 @@ class Score : AppCompatActivity() {
 
 
         //Setting the button to show the question reviews
-        reviewButton.setOnClickListener{
-            reviewView.text = "Question 1 = True\n" + "Question 2 = False\n" + "Question 3 = False\n" + "Question 4 = True\n" + "Question 5 = False"
+        reviewButton.setOnClickListener {
+            reviewView.text =
+                "Question 1 = True\n" + "Question 2 = False\n" + "Question 3 = False\n" + "Question 4 = True\n" + "Question 5 = False"
 
 
         }
 
+        //Making the button close the application
         closeButton.setOnClickListener {
             finishAffinity()
         }
 
+        //
         val feedback = when {
             score >= 3 -> "Great Job!"
             else -> "Keep Practicing"
         }
-
-        feedbackText.text = feedback
     }
 }
-
-
-

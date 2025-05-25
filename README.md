@@ -1,6 +1,6 @@
 # ST10483995 FlashLearn
 
-An app that helps any type of person study for history. The app is made to produce teu or false questions to simplify the flashchards while they study.
+An app that helps any type of person study for history. The app is made to produce true or false questions to simplify the flashcards while they study.
 ## Installation
 
 To install the app open Android Studio: Select the file titled "ST10483995_FlashCardsApps". Start up your emulator in the Device Manager. Once the gradle and emulator have booted up and are running, press the "run app" button on the top of the screen to install the app on the emulator and start using it.

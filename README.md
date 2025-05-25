@@ -23,9 +23,6 @@ To install the app open Android Studio: Select the file titled "ST10483995_Flash
 - Answer Result Notification 
 
 
-## Demo
-
-
 ## Screenshots
 ![FlashCards3](https://github.com/user-attachments/assets/be8a6962-ec6e-4eda-9e7e-1c7977f3029d)
 
@@ -53,7 +50,7 @@ To install the app open Android Studio: Select the file titled "ST10483995_Flash
 ## 🔗 Links
 
 - [GitHub Profile: ](https://github.com/ST10483995)
-- [App Repository1:]() 
+- [App Repository1:](https://github.com/ST10483995/ST10483995_FlashCardsApp) 
 - [YouTube Video:](https://youtu.be/6BBWLK8S7qg) 
 
 ## Authors
